@@ -9,14 +9,14 @@
   background: linear-gradient(#e66465, #9198e5);
 }
 
-#root>div {
+#root > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.app>div {
+.app > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,14 +27,14 @@
   flex-direction: row !important;
 }
 
-.row>* {
+.row > * {
   margin: 5px;
 }
 
 h1 {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   color: #fff;
-  text-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  text-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -57,7 +57,7 @@ h2 {
   width: 80vw;
   max-width: 260px;
   height: 300px;
-  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   background-size: cover;
   background-position: center;
@@ -69,7 +69,6 @@ h2 {
 }
 
 .swipe:last-of-type {
-
 }
 
 .card h3 {
@@ -106,19 +105,37 @@ h2 {
   margin: 0 10px;
   font-weight: bolder;
   width: 160px;
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
-.buttons button:hover {
+.buttons button:disabled {
+  background-color: #dfdfdf;
+}
+
+.buttons button:hover:enabled {
   transform: scale(1.05);
 }
 
 @keyframes popup {
-  0%   { transform: scale(1,1) }
-  10%  { transform: scale(1.1,1.1) }
-  30%  { transform: scale(.9,.9) }
-  50%  { transform: scale(1,1) }
-  57%  { transform: scale(1,1) }
-  64%  { transform: scale(1,1) }
-  100% { transform: scale(1,1) }
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 1.1);
+  }
+  30% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  57% {
+    transform: scale(1, 1);
+  }
+  64% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
